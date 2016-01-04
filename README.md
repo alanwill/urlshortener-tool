@@ -2,7 +2,7 @@
 
 This app will shorten a long URL using the [Goo.gl](http://goo.gl) service. It requires an OAuth token in order to associate its requests with your Google account so that you can log into goo.gl and view the URL analytics.
 
-### prerequisites
+### prerequisites & installation
 
 0. A Google account
 1. Install the Google Python library
