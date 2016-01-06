@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+
+# coding: utf-8
+from __future__ import (absolute_import, division, print_function, unicode_literals)
+
 import sys
 
 from oauth2client import client
@@ -16,12 +20,12 @@ def main(argv):
         body = {'longUrl': longurl }
         resp = url.insert(body=body).execute()
 
-        print ""
-        print "Shortened URL:   " + resp['id']
-        print "Long URL:        " + resp['longUrl']
+        print ("")
+        print ("Shortened URL:   " + resp['id'])
+        print ("Long URL:        " + resp['longUrl'])
 
     except client.AccessTokenRefreshError:
-        print ('The credentials have been revoked or expired, please re-run the application to re-authorize')
+        print ("The credentials have been revoked or expired, please re-run the application to re-authorize")
 
 if __name__ == '__main__':
     main(sys.argv)
