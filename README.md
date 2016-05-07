@@ -7,7 +7,7 @@ This app will shorten a long URL using the [Goo.gl](http://goo.gl) service. It r
 0. A Google account
 1. Install the Google Python library
     ```
-    pip install --upgrade google-api-python-client`
+    pip install --upgrade google-api-python-client
     ```
 2. Rename `client_secrets_sample.json` to `client_secrets.json`
 3. Go to the [Google Developer Console](https://console.developers.google.com/apis) and enable the URL Shortener API
